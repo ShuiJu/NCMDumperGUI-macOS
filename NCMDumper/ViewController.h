@@ -13,3 +13,7 @@
 
 @end
 
+@interface VCWindowController : NSWindowController<NSWindowDelegate>\
+
+
+@end
