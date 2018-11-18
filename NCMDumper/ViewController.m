@@ -127,6 +127,18 @@
     _contentPath.stringValue = @"~/Desktop/";
 }
 
+- (IBAction)clean:(id)sender {
+    NSAlert *alert = [[NSAlert alloc] init];
+    [alert setMessageText:@"清除缓存会直接删除位于文档的NCMDumper文件夹，请谨慎操作～"];
+    [alert addButtonWithTitle:@"好"];
+    [alert addButtonWithTitle:@"取消"];
+    NSInteger button = [alert runModal];
+    if (button == NSAlertFirstButtonReturn) {
+        getOutputOfThisCommand(@"rm -rf ~/Documents/NCMDumper", 1);
+    }
+}
+
+
 @end
 
 NSString *getOutputOfThisCommand(NSString *command, double timeOut) {

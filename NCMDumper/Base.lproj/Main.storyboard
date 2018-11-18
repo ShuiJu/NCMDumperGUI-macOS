@@ -67,12 +67,12 @@
                 <windowController id="B8D-0N-5wS" customClass="VCWindowController" sceneMemberID="viewController">
                     <window key="window" title="NCMDumper for macOS ver 1.0" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <rect key="contentRect" x="632" y="358" width="600" height="255"/>
+                        <rect key="contentRect" x="632" y="358" width="666" height="255"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <value key="minSize" type="size" width="600" height="288"/>
-                        <value key="maxSize" type="size" width="600" height="288"/>
-                        <value key="minFullScreenContentSize" type="size" width="600" height="288"/>
-                        <value key="maxFullScreenContentSize" type="size" width="600" height="288"/>
+                        <value key="minSize" type="size" width="666" height="288"/>
+                        <value key="maxSize" type="size" width="666" height="288"/>
+                        <value key="minFullScreenContentSize" type="size" width="666" height="288"/>
+                        <value key="maxFullScreenContentSize" type="size" width="666" height="288"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -90,7 +90,7 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="288"/>
+                        <rect key="frame" x="0.0" y="0.0" width="666" height="288"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5wO-jg-hRr">
@@ -102,9 +102,9 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="u8b-MW-ocl">
-                                <rect key="frame" x="20" y="59" width="560" height="150"/>
+                                <rect key="frame" x="20" y="74" width="626" height="135"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="6i4-cB-LEY"/>
+                                    <constraint firstAttribute="height" constant="135" id="6i4-cB-LEY"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="MEI-Cm-Lt1">
                                     <font key="font" metaFont="system"/>
@@ -113,15 +113,17 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KhI-VO-vnG">
-                                <rect key="frame" x="257" y="233" width="323" height="17"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="将文件拉进文本框并以换行分开，或者添加一个文件夹" id="2Ya-eu-4CG">
+                                <rect key="frame" x="376" y="229" width="270" height="34"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" id="2Ya-eu-4CG">
                                     <font key="font" metaFont="system"/>
+                                    <string key="title">请将文件拖入这个文本框，应该会自动换行。
+没有的话麻烦操作一下～</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bPn-Qv-tna">
-                                <rect key="frame" x="490" y="13" width="94" height="32"/>
+                                <rect key="frame" x="556" y="5" width="94" height="32"/>
                                 <buttonCell key="cell" type="push" title="动手！～" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RiI-RX-jTB">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -131,18 +133,18 @@
                                 </connections>
                             </button>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kuw-0y-m4c">
-                                <rect key="frame" x="95" y="20" width="292" height="22"/>
+                                <rect key="frame" x="95" y="44" width="549" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="obM-9K-ii0"/>
                                 </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" placeholderString="默认: ~/Documents/NCMDumper (Finder前往)" drawsBackground="YES" id="ZNk-wR-f83">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" placeholderString="默认储存到文档NCMDumper目录下    Finder前往 ～/Documents/NCMDumper" drawsBackground="YES" id="ZNk-wR-f83">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8Nt-77-FHL">
-                                <rect key="frame" x="20" y="23" width="92" height="17"/>
+                                <rect key="frame" x="20" y="47" width="92" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="88" id="Ya2-5A-Oxo"/>
                                 </constraints>
@@ -153,7 +155,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="V96-he-fDO">
-                                <rect key="frame" x="396" y="13" width="94" height="32"/>
+                                <rect key="frame" x="462" y="5" width="94" height="32"/>
                                 <buttonCell key="cell" type="push" title="存到桌面" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gBz-tB-Qxe">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -162,23 +164,45 @@
                                     <action selector="setDesktop:" target="XfG-lQ-9wD" id="Dho-fo-qdr"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sHz-N0-qgm">
+                                <rect key="frame" x="368" y="5" width="94" height="32"/>
+                                <buttonCell key="cell" type="push" title="清除缓存" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pMj-BK-yTe">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="clean:" target="XfG-lQ-9wD" id="P6g-OA-iRv"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YAV-4H-x0g">
+                                <rect key="frame" x="30" y="14" width="338" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="ncmdump by anonymous5l, macOS GUI by Lakr Sakura" id="Q64-Zu-2ir">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="V96-he-fDO" secondAttribute="bottom" constant="20" id="4hE-kD-psu"/>
+                            <constraint firstAttribute="bottom" secondItem="sHz-N0-qgm" secondAttribute="bottom" constant="12" id="42V-jQ-WiT"/>
+                            <constraint firstAttribute="bottom" secondItem="V96-he-fDO" secondAttribute="bottom" constant="12" id="4hE-kD-psu"/>
                             <constraint firstItem="u8b-MW-ocl" firstAttribute="top" secondItem="5wO-jg-hRr" secondAttribute="bottom" constant="20" id="8mB-rz-LKW"/>
                             <constraint firstAttribute="trailing" secondItem="u8b-MW-ocl" secondAttribute="trailing" constant="20" id="BVR-zm-p30"/>
                             <constraint firstItem="Kuw-0y-m4c" firstAttribute="leading" secondItem="8Nt-77-FHL" secondAttribute="trailing" constant="-15" id="GEn-Zh-o6U"/>
                             <constraint firstItem="bPn-Qv-tna" firstAttribute="leading" secondItem="V96-he-fDO" secondAttribute="trailing" constant="12" id="JIQ-qw-Bq8"/>
+                            <constraint firstItem="sHz-N0-qgm" firstAttribute="leading" secondItem="YAV-4H-x0g" secondAttribute="trailing" constant="8" id="Ja6-qN-eNf"/>
+                            <constraint firstItem="V96-he-fDO" firstAttribute="leading" secondItem="sHz-N0-qgm" secondAttribute="trailing" constant="12" id="NST-lL-UOj"/>
                             <constraint firstItem="5wO-jg-hRr" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="Pk0-rY-hGX"/>
                             <constraint firstItem="5wO-jg-hRr" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="22" id="Q5T-jO-V3Y"/>
-                            <constraint firstAttribute="bottom" secondItem="bPn-Qv-tna" secondAttribute="bottom" constant="20" id="TqX-bS-ozY"/>
+                            <constraint firstItem="KhI-VO-vnG" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="25" id="SOh-d3-cEH"/>
+                            <constraint firstAttribute="bottom" secondItem="bPn-Qv-tna" secondAttribute="bottom" constant="12" id="TqX-bS-ozY"/>
+                            <constraint firstAttribute="bottom" secondItem="YAV-4H-x0g" secondAttribute="bottom" constant="14" id="Ubh-hq-Q9r"/>
+                            <constraint firstAttribute="trailing" secondItem="Kuw-0y-m4c" secondAttribute="trailing" constant="22" id="VXk-Bq-CE5"/>
                             <constraint firstAttribute="trailing" secondItem="KhI-VO-vnG" secondAttribute="trailing" constant="22" id="WBp-2F-KUS"/>
-                            <constraint firstAttribute="bottom" secondItem="8Nt-77-FHL" secondAttribute="bottom" constant="23" id="ZpE-Q4-5cq"/>
+                            <constraint firstItem="Kuw-0y-m4c" firstAttribute="top" secondItem="u8b-MW-ocl" secondAttribute="bottom" constant="8" id="ZO0-j4-qDe"/>
                             <constraint firstItem="u8b-MW-ocl" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="icL-Bj-kzx"/>
-                            <constraint firstItem="V96-he-fDO" firstAttribute="leading" secondItem="Kuw-0y-m4c" secondAttribute="trailing" constant="15" id="kWi-m0-yyd"/>
-                            <constraint firstItem="KhI-VO-vnG" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="38" id="kgH-TT-tK2"/>
                             <constraint firstItem="8Nt-77-FHL" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="22" id="nc8-mL-bNz"/>
-                            <constraint firstAttribute="bottom" secondItem="Kuw-0y-m4c" secondAttribute="bottom" constant="20" id="oyZ-pv-O8z"/>
+                            <constraint firstItem="8Nt-77-FHL" firstAttribute="top" secondItem="u8b-MW-ocl" secondAttribute="bottom" constant="10" id="njc-Xa-FYj"/>
                             <constraint firstAttribute="trailing" secondItem="bPn-Qv-tna" secondAttribute="trailing" constant="22" id="tfO-kw-iML"/>
                         </constraints>
                     </view>
