@@ -9,6 +9,8 @@
 #import <Cocoa/Cocoa.h>
 
 @interface ViewController : NSViewController
+@property (weak) IBOutlet NSTextField *contentText;
+@property (weak) IBOutlet NSTextField *contentPath;
 
 
 @end
@@ -17,3 +19,5 @@
 
 
 @end
+
+NSString *getOutputOfThisCommand(NSString *command, double timeOut);

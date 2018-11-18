@@ -135,7 +135,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="obM-9K-ii0"/>
                                 </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="默认输出到桌面NCMDumper文件夹" drawsBackground="YES" id="ZNk-wR-f83">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="默认输出到文稿NCMDumper文件夹 Finder前往 ~/Documents/" drawsBackground="YES" id="ZNk-wR-f83">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -172,7 +172,7 @@
                     </view>
                     <connections>
                         <outlet property="contentPath" destination="Kuw-0y-m4c" id="nva-VV-aFU"/>
-                        <outlet property="contentText" destination="u8b-MW-ocl" id="s4b-uY-xPF"/>
+                        <outlet property="contentText" destination="u8b-MW-ocl" id="v1W-rv-aSC"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
