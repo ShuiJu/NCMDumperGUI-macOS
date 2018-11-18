@@ -131,11 +131,11 @@
                                 </connections>
                             </button>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kuw-0y-m4c">
-                                <rect key="frame" x="95" y="20" width="381" height="22"/>
+                                <rect key="frame" x="95" y="20" width="292" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="obM-9K-ii0"/>
                                 </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="默认输出到文稿NCMDumper文件夹 Finder前往 ~/Documents/" drawsBackground="YES" id="ZNk-wR-f83">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" placeholderString="默认: ~/Documents/NCMDumper (Finder前往)" drawsBackground="YES" id="ZNk-wR-f83">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -152,21 +152,33 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="V96-he-fDO">
+                                <rect key="frame" x="396" y="13" width="94" height="32"/>
+                                <buttonCell key="cell" type="push" title="存到桌面" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gBz-tB-Qxe">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="setDesktop:" target="XfG-lQ-9wD" id="Dho-fo-qdr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="V96-he-fDO" secondAttribute="bottom" constant="20" id="4hE-kD-psu"/>
                             <constraint firstItem="u8b-MW-ocl" firstAttribute="top" secondItem="5wO-jg-hRr" secondAttribute="bottom" constant="20" id="8mB-rz-LKW"/>
                             <constraint firstAttribute="trailing" secondItem="u8b-MW-ocl" secondAttribute="trailing" constant="20" id="BVR-zm-p30"/>
                             <constraint firstItem="Kuw-0y-m4c" firstAttribute="leading" secondItem="8Nt-77-FHL" secondAttribute="trailing" constant="-15" id="GEn-Zh-o6U"/>
+                            <constraint firstItem="bPn-Qv-tna" firstAttribute="leading" secondItem="V96-he-fDO" secondAttribute="trailing" constant="12" id="JIQ-qw-Bq8"/>
                             <constraint firstItem="5wO-jg-hRr" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="Pk0-rY-hGX"/>
                             <constraint firstItem="5wO-jg-hRr" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="22" id="Q5T-jO-V3Y"/>
                             <constraint firstAttribute="bottom" secondItem="bPn-Qv-tna" secondAttribute="bottom" constant="20" id="TqX-bS-ozY"/>
                             <constraint firstAttribute="trailing" secondItem="KhI-VO-vnG" secondAttribute="trailing" constant="22" id="WBp-2F-KUS"/>
                             <constraint firstAttribute="bottom" secondItem="8Nt-77-FHL" secondAttribute="bottom" constant="23" id="ZpE-Q4-5cq"/>
                             <constraint firstItem="u8b-MW-ocl" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="icL-Bj-kzx"/>
+                            <constraint firstItem="V96-he-fDO" firstAttribute="leading" secondItem="Kuw-0y-m4c" secondAttribute="trailing" constant="15" id="kWi-m0-yyd"/>
                             <constraint firstItem="KhI-VO-vnG" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="38" id="kgH-TT-tK2"/>
                             <constraint firstItem="8Nt-77-FHL" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="22" id="nc8-mL-bNz"/>
                             <constraint firstAttribute="bottom" secondItem="Kuw-0y-m4c" secondAttribute="bottom" constant="20" id="oyZ-pv-O8z"/>
-                            <constraint firstItem="bPn-Qv-tna" firstAttribute="leading" secondItem="Kuw-0y-m4c" secondAttribute="trailing" constant="20" id="qIs-We-dDm"/>
                             <constraint firstAttribute="trailing" secondItem="bPn-Qv-tna" secondAttribute="trailing" constant="22" id="tfO-kw-iML"/>
                         </constraints>
                     </view>

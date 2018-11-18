@@ -45,8 +45,6 @@
     NSError *error;
     BOOL thereIsJob = false;
     
-    NSString *commandForCommand = @"cd ~/Documents/NCMDumper/mp3/ \n";
-    
     NSString *contentFilePath = [_contentText stringValue];
     NSArray *items = [contentFilePath componentsSeparatedByString:@"\n"];
     
@@ -70,6 +68,7 @@
         outDir = [documentsDirectory stringByAppendingString:@"mp3"];
     }
     [[NSFileManager defaultManager] createDirectoryAtPath:outDir withIntermediateDirectories:true attributes:NULL error:NULL];
+    NSString *commandForCommand = [[NSString alloc] initWithFormat:@"cd %@ \n", outDir];
     
     while (items.count > counter) {
         if ([items[counter] rangeOfString:@".ncm"].location == NSNotFound) {
@@ -104,8 +103,8 @@
     }
     _contentText.stringValue = outputString;
     
-    [commandForCommand writeToFile:commandFile atomically:true encoding:NSUTF8StringEncoding error:&error];
-    getOutputOfThisCommand(@"/bin/chmod +x ~/Documents/NCMDumper/dump.command", 0.5);
+    //[commandForCommand writeToFile:commandFile atomically:true encoding:NSUTF8StringEncoding error:&error];
+    //getOutputOfThisCommand(@"/bin/chmod +x ~/Documents/NCMDumper/dump.command", 0.5);
     //[[NSWorkspace sharedWorkspace] openFile:commandFile];
     if (thereIsJob) {
         NSAlert *alert = [[NSAlert alloc] init];
@@ -114,12 +113,18 @@
         [alert runModal];
     }
     getOutputOfThisCommand(commandForCommand, 300);
-    
-    
+    if (thereIsJob) {
+        NSAlert *alert = [[NSAlert alloc] init];
+        [alert setMessageText:@"处理完成！"];
+        [alert addButtonWithTitle:@"好"];
+        [alert runModal];
+    }
     
 }
 
-
+- (IBAction)setDesktop:(id)sender {
+    _contentPath.stringValue = @"~/Desktop/";
+}
 
 @end
 
