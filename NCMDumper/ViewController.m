@@ -119,7 +119,8 @@
         [alert addButtonWithTitle:@"好"];
         [alert runModal];
     }
-    
+    [[NSFileManager defaultManager] removeItemAtPath:ncmTempPath error:&error];
+
 }
 
 - (IBAction)setDesktop:(id)sender {
