@@ -92,7 +92,88 @@
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="288"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5wO-jg-hRr">
+                                <rect key="frame" x="20" y="229" width="184" height="39"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="NCMDumper" id="ZPo-ML-8Vx">
+                                    <font key="font" metaFont="system" size="32"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="u8b-MW-ocl">
+                                <rect key="frame" x="20" y="59" width="560" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="6i4-cB-LEY"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="MEI-Cm-Lt1">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KhI-VO-vnG">
+                                <rect key="frame" x="257" y="233" width="323" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="将文件拉进文本框并以换行分开，或者添加一个文件夹" id="2Ya-eu-4CG">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bPn-Qv-tna">
+                                <rect key="frame" x="490" y="13" width="94" height="32"/>
+                                <buttonCell key="cell" type="push" title="动手！～" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RiI-RX-jTB">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="doIt:" target="XfG-lQ-9wD" id="6hO-mj-IOQ"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kuw-0y-m4c">
+                                <rect key="frame" x="95" y="20" width="381" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="obM-9K-ii0"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="默认输出到桌面NCMDumper文件夹" drawsBackground="YES" id="ZNk-wR-f83">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8Nt-77-FHL">
+                                <rect key="frame" x="20" y="23" width="92" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="Ya2-5A-Oxo"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="输出路径：" id="meH-rd-iXV">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="u8b-MW-ocl" firstAttribute="top" secondItem="5wO-jg-hRr" secondAttribute="bottom" constant="20" id="8mB-rz-LKW"/>
+                            <constraint firstAttribute="trailing" secondItem="u8b-MW-ocl" secondAttribute="trailing" constant="20" id="BVR-zm-p30"/>
+                            <constraint firstItem="Kuw-0y-m4c" firstAttribute="leading" secondItem="8Nt-77-FHL" secondAttribute="trailing" constant="-15" id="GEn-Zh-o6U"/>
+                            <constraint firstItem="5wO-jg-hRr" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="Pk0-rY-hGX"/>
+                            <constraint firstItem="5wO-jg-hRr" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="22" id="Q5T-jO-V3Y"/>
+                            <constraint firstAttribute="bottom" secondItem="bPn-Qv-tna" secondAttribute="bottom" constant="20" id="TqX-bS-ozY"/>
+                            <constraint firstAttribute="trailing" secondItem="KhI-VO-vnG" secondAttribute="trailing" constant="22" id="WBp-2F-KUS"/>
+                            <constraint firstAttribute="bottom" secondItem="8Nt-77-FHL" secondAttribute="bottom" constant="23" id="ZpE-Q4-5cq"/>
+                            <constraint firstItem="u8b-MW-ocl" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="icL-Bj-kzx"/>
+                            <constraint firstItem="KhI-VO-vnG" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="38" id="kgH-TT-tK2"/>
+                            <constraint firstItem="8Nt-77-FHL" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="22" id="nc8-mL-bNz"/>
+                            <constraint firstAttribute="bottom" secondItem="Kuw-0y-m4c" secondAttribute="bottom" constant="20" id="oyZ-pv-O8z"/>
+                            <constraint firstItem="bPn-Qv-tna" firstAttribute="leading" secondItem="Kuw-0y-m4c" secondAttribute="trailing" constant="20" id="qIs-We-dDm"/>
+                            <constraint firstAttribute="trailing" secondItem="bPn-Qv-tna" secondAttribute="trailing" constant="22" id="tfO-kw-iML"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentPath" destination="Kuw-0y-m4c" id="nva-VV-aFU"/>
+                        <outlet property="contentText" destination="u8b-MW-ocl" id="s4b-uY-xPF"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

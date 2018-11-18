@@ -23,5 +23,8 @@
 
 @implementation ViewController
 
+- (IBAction)doIt:(id)sender {
+}
+
 
 @end
